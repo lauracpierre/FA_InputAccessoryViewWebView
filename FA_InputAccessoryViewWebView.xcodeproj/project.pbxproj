@@ -13,6 +13,7 @@
 		7A56FFCD1BBB584700896BC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A56FFCB1BBB584700896BC1 /* Main.storyboard */; };
 		7A56FFCF1BBB584700896BC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A56FFCE1BBB584700896BC1 /* Assets.xcassets */; };
 		7A56FFD21BBB584700896BC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A56FFD01BBB584700896BC1 /* LaunchScreen.storyboard */; };
+		7A7438A51BBC470B0009A237 /* FA_InputAccessoryWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A7438A41BBC470B0009A237 /* FA_InputAccessoryWebView.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		7A56FFCE1BBB584700896BC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7A56FFD11BBB584700896BC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7A56FFD31BBB584700896BC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A7438A31BBC470B0009A237 /* FA_InputAccessoryWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FA_InputAccessoryWebView.h; path = Classes/FA_InputAccessoryWebView.h; sourceTree = "<group>"; };
+		7A7438A41BBC470B0009A237 /* FA_InputAccessoryWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FA_InputAccessoryWebView.m; path = Classes/FA_InputAccessoryWebView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +45,7 @@
 		7A56FFB61BBB584700896BC1 = {
 			isa = PBXGroup;
 			children = (
+				7A56FFD91BBB5AE800896BC1 /* Classes */,
 				7A56FFC11BBB584700896BC1 /* FA_InputAccessoryViewWebView */,
 				7A56FFC01BBB584700896BC1 /* Products */,
 			);
@@ -77,6 +81,15 @@
 				7A56FFC31BBB584700896BC1 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7A56FFD91BBB5AE800896BC1 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				7A7438A31BBC470B0009A237 /* FA_InputAccessoryWebView.h */,
+				7A7438A41BBC470B0009A237 /* FA_InputAccessoryWebView.m */,
+			);
+			name = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A7438A51BBC470B0009A237 /* FA_InputAccessoryWebView.m in Sources */,
 				7A56FFCA1BBB584700896BC1 /* ViewController.m in Sources */,
 				7A56FFC71BBB584700896BC1 /* AppDelegate.m in Sources */,
 				7A56FFC41BBB584700896BC1 /* main.m in Sources */,
@@ -264,6 +278,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FA_InputAccessoryViewWebView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "FA.FA-InputAccessoryViewWebView";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -275,6 +290,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FA_InputAccessoryViewWebView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "FA.FA-InputAccessoryViewWebView";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -300,6 +316,7 @@
 				7A56FFD81BBB584700896BC1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
