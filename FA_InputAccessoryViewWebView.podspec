@@ -29,7 +29,7 @@ Pod::Spec.new do |s|
     You can simply pass the new view nd the default uiwebview toolbar will be replaced by it. 
                    DESC
 
-  # s.homepage     = "http://EXAMPLE/FA_InputAccessoryViewWebView"
+  s.homepage     = "https://github.com/lauracpierre/FA_InputAccessoryViewWebView"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -40,7 +40,7 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = "MIT (example)"
+  s.license      = "MIT"
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
@@ -80,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "http://EXAMPLE/FA_InputAccessoryViewWebView.git", :tag => "0.0.1" }
+  s.source       = { :git => "https://github.com/lauracpierre/FA_InputAccessoryViewWebView.git", :tag => "master" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
