@@ -29,7 +29,7 @@ Pod::Spec.new do |s|
     You can simply pass the new view nd the default uiwebview toolbar will be replaced by it. 
                    DESC
 
-  #s.homepage     = "http://EXAMPLE/FA_InputAccessoryViewWebView"
+  # s.homepage     = "http://EXAMPLE/FA_InputAccessoryViewWebView"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
