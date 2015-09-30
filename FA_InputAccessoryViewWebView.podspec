@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "FA_InputAccessoryViewWebView"
-  s.version      = "0.0.2"
+  s.version      = "0.0.4"
   s.summary      = "UIWebView subclass to provide alternative input accessory view."
 
   # This description is used to generate tags and improve search results.
@@ -80,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/lauracpierre/FA_InputAccessoryViewWebView.git", :tag => "v0.0.3" }
+  s.source       = { :git => "https://github.com/lauracpierre/FA_InputAccessoryViewWebView.git", :tag => "v0.0.4" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
