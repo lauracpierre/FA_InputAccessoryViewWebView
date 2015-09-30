@@ -65,7 +65,7 @@ Pod::Spec.new do |s|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  # s.platform     = :ios
+  s.platform     = :ios, '8.0'
   # s.platform     = :ios, "5.0"
 
   #  When using multiple platforms
@@ -80,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/lauracpierre/FA_InputAccessoryViewWebView.git", :tag => "master" }
+  s.source       = { :git => "https://github.com/lauracpierre/FA_InputAccessoryViewWebView.git", :tag => "v0.0.2" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
