@@ -21,7 +21,7 @@
 static const char * const hackishFixClassName = "UIWebBrowserViewMinusAccessoryView";
 static Class hackishFixClass = Nil;
 
-- (UIView *)hackishlyFoundBrowserView {
+- (UIView *)findBrowserView {
     UIScrollView *scrollView = self.scrollView;
     
     UIView *browserView = nil;
@@ -35,25 +35,24 @@ static Class hackishFixClass = Nil;
 }
 
 - (void)ensureHackishSubclassExistsOfBrowserViewClass:(Class)browserViewClass {
+    // Checking if we already registered the new hacking class.
     if (!hackishFixClass) {
-        
-        UIView * toolbar = self._accessoryView;
-        id block = ^{
-            return toolbar;
-        };
         Class newClass = objc_allocateClassPair(browserViewClass, hackishFixClassName, 0);
-        IMP blockImp = imp_implementationWithBlock(block);
-        class_addMethod(newClass, @selector(inputAccessoryView), blockImp, "@@:");
-        
-        
         objc_registerClassPair(newClass);
-        
         hackishFixClass = newClass;
     }
+    
+    // Always replace the imp of the method.
+    UIView * toolbar = self._accessoryView;
+    id block = ^{
+        return toolbar;
+    };
+    IMP blockImp = imp_implementationWithBlock(block);
+    class_replaceMethod(hackishFixClass, @selector(inputAccessoryView), blockImp, "@@:");
 }
 
 - (void) changeAccessoryView:(UIView *)accessoryView {
-    UIView *browserView = [self hackishlyFoundBrowserView];
+    UIView *browserView = [self findBrowserView];
     if (browserView == nil) {
         return;
     }
